@@ -88,13 +88,8 @@ Cada endpoint acepta y devuelve datos en formato JSON.
 }
 ```
 
-- Ejemplo de respuesta:
+Returns: A token.
 
-```json
-{
-  "token": "xxxtokenxxx"
-}
-```
 
 ### Logout
 
@@ -107,8 +102,6 @@ Cada endpoint acepta y devuelve datos en formato JSON.
   "Authorization": "Bearer xxxtokenxxx"
 }
 ```
-
-- Ejemplo de respuesta:
 
 Returns: A confirmation message.
 
@@ -124,19 +117,7 @@ Returns: A confirmation message.
 }
 ```
 
-- Ejemplo de respuesta:
-
-```json
-{
-  "data": {
-    "id"        : 1,
-    "name"      : "Nombre del Usuario",
-    "email"     : "user@test.cl",
-		"created_at": "2023-04-22T10:30:45Z",
-		"updated_at": "2023-04-22T10:30:45Z"
-}
-}
-```
+Returns: A user data.
 
 ### Get Clients
 
@@ -182,7 +163,7 @@ Params Example:
 ```json
 {
   "Authorization": "Bearer xxxtokenxxx",
-	"body"         : {
+	"body": {
 		"name" : "Guacolda",
 		"email": "guacolda@test.cl"
 	}
@@ -202,7 +183,7 @@ Params Example:
 ```json
 {
 	"Authorization": "Bearer xxxtokenxxx",
-	"body"         : {
+	"body": {
 		"name" : "Guacolda esposa de Lautaro",
 		"email": "guacolda@test.cl"
 	}
@@ -271,7 +252,7 @@ Params Example:
 ```json
 {
   "Authorization": "Bearer xxxtokenxxx",
-  "body"         : {
+  "body": {
     {
 		 "name" : "Limón",
 		 "price": 1200,
@@ -294,7 +275,7 @@ Params Example:
 ```json
 {
 	"Authorization": "Bearer xxxtokenxxx",
-	"body"         : {
+	"body": {
 		"name" : "Limón",
 		"price": 1200,
 		"stock": 30
@@ -364,8 +345,8 @@ Params Example:
 ```json
 {
 	"Authorization": "Bearer xxxtokenxxx",
-	"body"         : {
-		"name"       : "Agua Para Resfrio",
+	"body": {
+		"name": "Agua Para Resfrio",
 		"ingredients": [
 			{
 				"ingredient_id": 11,
@@ -397,8 +378,8 @@ Params Example:
 ```json
 {
 	"Authorization": "Bearer xxxtokenxxx",
-	"body"         : {
-		"name"       : "Agua Para Resfrio",
+	"body": {
+		"name": "Agua Para Resfrio",
 		"ingredients": [
 			{
 				"ingredient_id": 11,
@@ -475,7 +456,7 @@ Params Example:
 ```json
 {
 	"Authorization": "Bearer xxxtokenxxx",
-	"body"         : {
+	"body": {
 		"client_id": 5,
 		"potions"  : [
 			{
@@ -504,7 +485,7 @@ Params Example:
 ```json
 {
 	"Authorization": "Bearer xxxtokenxxx",
-	"body"         : {
+	"body": {
 		"client_id": 5,
 		"potions"  : [
 			{
