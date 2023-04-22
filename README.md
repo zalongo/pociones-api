@@ -16,7 +16,7 @@ Antes de empezar, asegúrese de tener instalado lo siguiente en su sistema:
 1. Clonar este repositorio en su máquina local:
 
 ```bash
-git clone https:   //github.com/tu-usuario/api-posiones-laravel.git
+git clone https:   //github.com/zalongo/posiones-api
 ```
 
 2. Entrar en el directorio del proyecto:
