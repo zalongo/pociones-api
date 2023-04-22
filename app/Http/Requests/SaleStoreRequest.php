@@ -41,8 +41,8 @@ class SaleStoreRequest extends FormRequest
             'client_id.required'           => 'El campo cliente es obligatorio.',
             'client_id.integer'            => 'El campo cliente debe ser un número entero.',
             'client_id.exists'             => 'El cliente no existe.',
-            'potions.*.potion_id.required' => 'No se ha seleccionado una posión.',
-            'potions.*.potion_id.exists'   => 'La posión seleccionada no existe.',
+            'potions.*.potion_id.required' => 'No se ha seleccionado una poción.',
+            'potions.*.potion_id.exists'   => 'La poción seleccionada no existe.',
             'potions.*.quantity.required'  => 'No se ha ingresado una cantidad.',
             'potions.*.quantity.numeric'   => 'No se ha ingresado una cantidad válida.',
             'potions.*.quantity.gt'        => 'La cantidad debe ser mayor a 0.'

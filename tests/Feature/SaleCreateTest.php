@@ -175,7 +175,7 @@ class SaleCreateTest extends TestCase
                 'message'       => [
                     'potions' => [
                         [
-                            'potion_id' => ['No se ha seleccionado una posión.']
+                            'potion_id' => ['No se ha seleccionado una poción.']
                         ]
                     ]
                 ]
@@ -193,7 +193,7 @@ class SaleCreateTest extends TestCase
                 'message'       => [
                     'potions' => [
                         [
-                            'potion_id' => ['La posión seleccionada no existe.']
+                            'potion_id' => ['La poción seleccionada no existe.']
                         ]
                     ]
                 ]
@@ -211,7 +211,7 @@ class SaleCreateTest extends TestCase
                     'potions' => [
                         [
                             'quantity'  => ['No se ha ingresado una cantidad.'],
-                            'potion_id' => ['La posión seleccionada no existe.'],
+                            'potion_id' => ['La poción seleccionada no existe.'],
                         ]
                     ]
                 ]
@@ -229,7 +229,7 @@ class SaleCreateTest extends TestCase
                 'message'       => [
                     'potions' => [
                         [
-                            'potion_id' => ['La posión seleccionada no existe.'],
+                            'potion_id' => ['La poción seleccionada no existe.'],
                             'quantity'  => ['No se ha ingresado una cantidad válida.', 'La cantidad debe ser mayor a 0.'],
                         ]
                     ]
@@ -248,7 +248,7 @@ class SaleCreateTest extends TestCase
                 'message'       => [
                     'potions' => [
                         [
-                            'potion_id' => ['La posión seleccionada no existe.'],
+                            'potion_id' => ['La poción seleccionada no existe.'],
                             'quantity'  => ['La cantidad debe ser mayor a 0.'],
                         ]
                     ]
@@ -341,7 +341,7 @@ class SaleCreateTest extends TestCase
                 'message' => 'Datos no Válidos',
                 'data'    => [
                     'potions' => [
-                        'No hay suficiente stock de Ingrediente Mágico para preparar las posiones requeridas.'
+                        'No hay suficiente stock de Ingrediente Mágico para preparar las pociones requeridas.'
                     ]
                 ]
             ]);

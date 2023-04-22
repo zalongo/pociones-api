@@ -1,6 +1,6 @@
 # API de Posiones en Laravel
 
-Este proyecto es una API de posiones construida en Laravel que se conecta a una base de datos MySQL. Puede utilizarse para gestionar y controlar posiones y remedios naturales, sus ingredientes, clientes y ventas.
+Este proyecto es una API de pociones construida en Laravel que se conecta a una base de datos MySQL. Puede utilizarse para gestionar y controlar pociones y remedios naturales, sus ingredientes, clientes y ventas.
 
 ## Requisitos previos
 
@@ -16,13 +16,13 @@ Antes de empezar, asegúrese de tener instalado lo siguiente en su sistema:
 1. Clonar este repositorio en su máquina local:
 
 ```bash
-git clone https:   //github.com/zalongo/posiones-api
+git clone https:   //github.com/zalongo/pociones-api
 ```
 
 2. Entrar en el directorio del proyecto:
 
 ```bash
-cd api-posiones-laravel
+cd pociones-api
 ```
 
 3. Instalar las dependencias de Laravel utilizando Composer:

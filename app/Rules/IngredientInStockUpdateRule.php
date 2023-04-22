@@ -76,7 +76,7 @@ class IngredientInStockUpdateRule implements Rule
                         }
 
                         if ($ingredients[$ingredient->id]['stock'] < $ingredients[$ingredient->id]['amount']) {
-                            $this->setMessage('No hay suficiente stock de ' . $ingredient->name . ' para preparar las posiones requeridas.');
+                            $this->setMessage('No hay suficiente stock de ' . $ingredient->name . ' para preparar las pociones requeridas.');
                             return false;
                         }
                     }
@@ -93,7 +93,7 @@ class IngredientInStockUpdateRule implements Rule
      */
     public function message()
     {
-        return $this->message ?? 'No hay suficiente stock de algunos ingredientes para preparar las posiones.';
+        return $this->message ?? 'No hay suficiente stock de algunos ingredientes para preparar las pociones.';
     }
 
     public function setMessage($message)
