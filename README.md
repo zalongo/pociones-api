@@ -83,8 +83,8 @@ Cada endpoint acepta y devuelve datos en formato JSON.
 
 ```json
 {
-    "email"   : "user@test.cl",
-    "password": "12345678"
+  "email"   : "user@test.cl",
+  "password": "12345678"
 }
 ```
 
@@ -92,7 +92,7 @@ Cada endpoint acepta y devuelve datos en formato JSON.
 
 ```json
 {
-    "token": "xxxtokenxxx"
+  "token": "xxxtokenxxx"
 }
 ```
 
@@ -104,7 +104,7 @@ Cada endpoint acepta y devuelve datos en formato JSON.
 
 ```json
 {
-    "Authorization": "Bearer xxxtokenxxx"
+  "Authorization": "Bearer xxxtokenxxx"
 }
 ```
 
@@ -120,7 +120,7 @@ Returns: A confirmation message.
 
 ```json
 {
-    "Authorization": "Bearer xxxtokenxxx"
+  "Authorization": "Bearer xxxtokenxxx"
 }
 ```
 
@@ -128,13 +128,13 @@ Returns: A confirmation message.
 
 ```json
 {
-    "data": {
-        "id"        : 1,
-        "name"      : "Nombre del Usuario",
-        "email"     : "user@test.cl",
-        "created_at": "2023-04-22T10:30:45Z",
-        "updated_at": "2023-04-22T10:30:45Z"
-    }
+  "data": {
+    "id"        : 1,
+    "name"      : "Nombre del Usuario",
+    "email"     : "user@test.cl",
+		"created_at": "2023-04-22T10:30:45Z",
+		"updated_at": "2023-04-22T10:30:45Z"
+}
 }
 ```
 
@@ -142,14 +142,14 @@ Returns: A confirmation message.
 
 Retrieves a list of all clients in the database.
 
-         Endpoint: GET /api/clients
+Endpoint: GET /api/clients
 
 Optional Filters: ?limit=10&page=1
 Params   Example:
 
 ```json
 {
-    "Authorization": "Bearer xxxtokenxxx"
+  "Authorization": "Bearer xxxtokenxxx"
 }
 ```
 
@@ -159,13 +159,13 @@ Returns: A list of all clients.
 
 Retrieves a specific client's data by providing their ID.
 
-       Endpoint: GET /api/clients/{client_id}
+Endpoint: GET /api/clients/{client_id}
 
 Params Example:
 
 ```json
 {
-    "Authorization": "Bearer xxxtokenxxx"
+ 	"Authorization": "Bearer xxxtokenxxx"
 }
 ```
 
@@ -175,17 +175,17 @@ Returns: The client's data.
 
 Adds a new client to the database.
 
-       Endpoint: POST /api/clients
+Endpoint: POST /api/clients
 
 Params Example:
 
 ```json
 {
-    "Authorization": "Bearer xxxtokenxxx",
-    "body"         : {
-        "name" : "Guacolda",
-        "email": "guacolda@test.cl"
-    }
+  "Authorization": "Bearer xxxtokenxxx",
+	"body"         : {
+		"name" : "Guacolda",
+		"email": "guacolda@test.cl"
+	}
 }
 ```
 
@@ -195,17 +195,17 @@ Returns: A confirmation message and the client's data.
 
 Updates an existing client in the database by providing their ID.
 
-       Endpoint: PUT /api/clients/{client_id}
+Endpoint: PUT /api/clients/{client_id}
 
 Params Example:
 
 ```json
 {
-    "Authorization": "Bearer xxxtokenxxx",
-    "body"         : {
-        "name" : "Guacolda esposa de Lautaro",
-        "email": "guacolda@test.cl"
-    }
+	"Authorization": "Bearer xxxtokenxxx",
+	"body"         : {
+		"name" : "Guacolda esposa de Lautaro",
+		"email": "guacolda@test.cl"
+	}
 }
 ```
 
@@ -221,7 +221,7 @@ Params Example:
 
 ```json
 {
-    "Authorization": "Bearer xxxtokenxxx"
+  "Authorization": "Bearer xxxtokenxxx"
 }
 ```
 
@@ -231,14 +231,14 @@ Returns: A confirmation message.
 
 Retrieves a list of all ingredients in the database.
 
-         Endpoint: GET /api/ingredients
+Endpoint: GET /api/ingredients
 
 Optional Filters: ?limit=10&page=1
 Params   Example:
 
 ```json
 {
-    "Authorization": "Bearer xxxtokenxxx"
+  "Authorization": "Bearer xxxtokenxxx"
 }
 ```
 
@@ -248,13 +248,13 @@ Returns: A list of all ingredients.
 
 Retrieves a specific ingredient's data by providing their ID.
 
-       Endpoint: GET /api/ingredients/{ingredient_id}
+Endpoint: GET /api/ingredients/{ingredient_id}
 
 Params Example:
 
 ```json
 {
-    "Authorization": "Bearer xxxtokenxxx"
+	"Authorization": "Bearer xxxtokenxxx"
 }
 ```
 
@@ -264,7 +264,7 @@ Returns: The client's data.
 
 Adds a new ingredient to the database.
 
-       Endpoint: POST /api/ingredients
+Endpoint: POST /api/ingredients
 
 Params Example:
 
@@ -287,20 +287,18 @@ Returns: A confirmation message and the ingredient's data.
 
 Updates an existing ingredient in the database by providing their ID.
 
-       Endpoint: PUT /api/ingredients/{ingredient_id}
+Endpoint: PUT /api/ingredients/{ingredient_id}
 
 Params Example:
 
 ```json
 {
-    "Authorization": "Bearer xxxtokenxxx",
-    "body"         : {
-        {
-			"name" : "Limón",
-			"price": 1200,
-			"stock": 30
-			 }
-    }
+	"Authorization": "Bearer xxxtokenxxx",
+	"body"         : {
+		"name" : "Limón",
+		"price": 1200,
+		"stock": 30
+	}
 }
 ```
 
@@ -310,13 +308,13 @@ Returns: A confirmation message and the updated ingredient's data.
 
 Deletes an existing ingredient from the database by setting their status to inactive.
 
-       Endpoint: DELETE /api/ingredients/{ingredient_id}
+Endpoint: DELETE /api/ingredients/{ingredient_id}
 
 Params Example:
 
 ```json
 {
-    "Authorization": "Bearer xxxtokenxxx"
+  "Authorization": "Bearer xxxtokenxxx"
 }
 ```
 
@@ -326,14 +324,14 @@ Returns: A confirmation message.
 
 Retrieves a list of all potions in the database.
 
-         Endpoint: GET /api/potions
+Endpoint: GET /api/potions
 
 Optional Filters: ?limit=10&page=1
 Params   Example:
 
 ```json
 {
-    "Authorization": "Bearer xxxtokenxxx"
+	"Authorization": "Bearer xxxtokenxxx"
 }
 ```
 
@@ -343,13 +341,13 @@ Returns: A list of all potions.
 
 Retrieves a specific potion's data by providing their ID.
 
-       Endpoint: GET /api/potions/{potion_id}
+Endpoint: GET /api/potions/{potion_id}
 
 Params Example:
 
 ```json
 {
-    "Authorization": "Bearer xxxtokenxxx"
+  "Authorization": "Bearer xxxtokenxxx"
 }
 ```
 
@@ -359,14 +357,14 @@ Returns: The client's data.
 
 Adds a new potion to the database.
 
-       Endpoint: POST /api/potions
+Endpoint: POST /api/potions
 
 Params Example:
 
 ```json
 {
-  	"Authorization": "Bearer xxxtokenxxx",
-  	"body"         : {
+	"Authorization": "Bearer xxxtokenxxx",
+	"body"         : {
 		"name"       : "Agua Para Resfrio",
 		"ingredients": [
 			{
@@ -382,7 +380,7 @@ Params Example:
 				"quantity"     : 0.4
 			}
 		]
-  	}
+	}
 }
 ```
 
@@ -392,23 +390,23 @@ Returns: A confirmation message and the potion's data.
 
 Updates an existing potion in the database by providing their ID.
 
-       Endpoint: PUT /api/potions/{potion_id}
+Endpoint: PUT /api/potions/{potion_id}
 
 Params Example:
 
 ```json
 {
-    "Authorization": "Bearer xxxtokenxxx",
-    "body"         : {
-		"name": "Agua Para Resfrio",
+	"Authorization": "Bearer xxxtokenxxx",
+	"body"         : {
+		"name"       : "Agua Para Resfrio",
 		"ingredients": [
 			{
 				"ingredient_id": 11,
-				"quantity": 0.3
+				"quantity"     : 0.3
 			},
 			{
 				"ingredient_id": 12,
-				"quantity": 0.1
+				"quantity"     : 0.1
 			}
 		]
 	}
@@ -421,13 +419,13 @@ Returns: A confirmation message and the updated potion's data.
 
 Deletes an existing potion from the database by setting their status to inactive.
 
-       Endpoint: DELETE /api/potions/{potion_id}
+Endpoint: DELETE /api/potions/{potion_id}
 
 Params Example:
 
 ```json
 {
-    "Authorization": "Bearer xxxtokenxxx"
+  "Authorization": "Bearer xxxtokenxxx"
 }
 ```
 
@@ -437,14 +435,14 @@ Returns: A confirmation message.
 
 Retrieves a list of all sales in the database.
 
-         Endpoint: GET /api/sales
+Endpoint: GET /api/sales
 
 Optional Filters: ?limit=10&page=1&client=1
 Params   Example:
 
 ```json
 {
-    "Authorization": "Bearer xxxtokenxxx"
+  "Authorization": "Bearer xxxtokenxxx"
 }
 ```
 
@@ -454,13 +452,13 @@ Returns: A list of all sales.
 
 Retrieves a specific sale's data by providing their ID.
 
-       Endpoint: GET /api/sales/{sale_id}
+Endpoint: GET /api/sales/{sale_id}
 
 Params Example:
 
 ```json
 {
-    "Authorization": "Bearer xxxtokenxxx"
+	"Authorization": "Bearer xxxtokenxxx"
 }
 ```
 
@@ -470,23 +468,23 @@ Returns: The client's data.
 
 Adds a new sale to the database.
 
-       Endpoint: POST /api/sales
+Endpoint: POST /api/sales
 
 Params Example:
 
 ```json
 {
-  	"Authorization": "Bearer xxxtokenxxx",
-  	"body"         : {
+	"Authorization": "Bearer xxxtokenxxx",
+	"body"         : {
 		"client_id": 5,
-		"potions": [
+		"potions"  : [
 			{
 				"potion_id": 1,
-				"quantity": 3
+				"quantity" : 3
 			},
 			{
 				"potion_id": 2,
-				"quantity": 1
+				"quantity" : 1
 			}
 		]
 	}
@@ -499,23 +497,23 @@ Returns: A confirmation message and the sale's data.
 
 Updates an existing sale in the database by providing their ID.
 
-       Endpoint: PUT /api/sales/{sale_id}
+Endpoint: PUT /api/sales/{sale_id}
 
 Params Example:
 
 ```json
 {
-    "Authorization": "Bearer xxxtokenxxx",
-    "body"         : {
+	"Authorization": "Bearer xxxtokenxxx",
+	"body"         : {
 		"client_id": 5,
-		"potions": [
+		"potions"  : [
 			{
 				"potion_id": 1,
-				"quantity": 3
+				"quantity" : 3
 			},
 			{
 				"potion_id": 2,
-				"quantity": 1
+				"quantity" : 1
 			}
 		]
 	}
@@ -528,13 +526,13 @@ Returns: A confirmation message and the updated sale's data.
 
 Deletes an existing sale from the database by setting their status to inactive.
 
-       Endpoint: DELETE /api/sales/{sale_id}
+Endpoint: DELETE /api/sales/{sale_id}
 
 Params Example:
 
 ```json
 {
-    "Authorization": "Bearer xxxtokenxxx"
+	"Authorization": "Bearer xxxtokenxxx"
 }
 ```
 
@@ -545,7 +543,6 @@ Returns: A confirmation message.
 En la carpeta /SCRIPTS/requests se encuentran los archivos que permiten realizar las consultas a los distintos endpoints. Estos archivos funcionan con el plugin "REST Client" por Huachao Mao para VSCode.
 
 Para utilizar estos archivos, abra VSCode y abra el archivo correspondiente al endpoint que desea probar. Luego, haga clic en el botón "Send Request" que aparece en la parte superior derecha del editor. La respuesta de la API aparecerá en la pestaña "Response" en la parte inferior del editor.
-
 
 ## Tests
 
