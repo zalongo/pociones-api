@@ -1,0 +1,14 @@
+BDD OK
+procesar la data y traspasarla a un modelo relacional OK
+Todas las respuestas y parámetros de consulta deben manejarse en JSON OK
+AUTH OK
+El token debe tener un tiempo de vida de 3 horas. OK
+CRUD clientes OK
+CRUD ventas OK
+CRUD pociones OK
+CRUD ingredientes OK
+
+laravel en blanco OK
+subir tu solución a la rama Develop OK
+hacer un merge a la rama Master
+DDL de las tablas y los INSERT OK

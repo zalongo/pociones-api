@@ -1,0 +1,49 @@
+@authToken = 1|3M3MiJEolx0v6xmLLSOmZRfxSIUHckUGyMauDVRd
+
+GET http://127.0.0.1:8000/api/ingredients
+content-type: application/json
+Authorization: Bearer {{authToken}}
+
+
+###
+
+
+POST http://127.0.0.1:8000/api/ingredients
+content-type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+	"name": "Limon",
+    "price": 1300,
+	"stock": 20
+}
+
+
+###
+
+
+GET http://127.0.0.1:8000/api/ingredients/11
+content-type: application/json
+Authorization: Bearer {{authToken}}
+
+
+###
+
+
+PUT http://127.0.0.1:8000/api/ingredients/11
+content-type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+	"name": "Limón",
+    "price": 1200,
+	"stock": 30
+}
+
+
+###
+
+
+DELETE http://127.0.0.1:8000/api/ingredients/11
+Content-Type: application/json
+Authorization: Bearer {{authToken}}

@@ -1,0 +1,4 @@
+@authToken = 1|RmE4P95a3V49k203u7h2SpRPufjPKFXhvU4LEkGM
+
+POST http://127.0.0.1:8000/api/auth/logout
+Authorization: Bearer {{authToken}}

@@ -1,0 +1,6 @@
+@authToken = 1|riY09NY5o1IuB7zkqTVDPZc9tndd7dXykmFS9xd9
+
+
+GET http://127.0.0.1:8000/api/user
+content-type: application/json
+Authorization: Bearer {{authToken}}

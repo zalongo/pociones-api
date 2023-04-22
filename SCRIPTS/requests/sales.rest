@@ -1,0 +1,49 @@
+@authToken = 1|3M3MiJEolx0v6xmLLSOmZRfxSIUHckUGyMauDVRd
+
+GET http://127.0.0.1:8000/api/sales?client_id=1&potion_id=1
+content-type: application/json
+Authorization: Bearer {{authToken}}
+
+
+###
+
+
+POST http://127.0.0.1:8000/api/sales
+content-type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+	"client_id": 5,
+    "potion_id": 4,
+	"quantity": 4
+}
+
+
+###
+
+
+GET http://127.0.0.1:8000/api/sales/55
+content-type: application/json
+Authorization: Bearer {{authToken}}
+
+
+###
+
+
+PUT http://127.0.0.1:8000/api/sales/55
+content-type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+	"client_id": 5,
+    "potion_id": 4,
+	"quantity": 2
+}
+
+
+###
+
+
+DELETE http://127.0.0.1:8000/api/sales/55
+Content-Type: application/json
+Authorization: Bearer {{authToken}}

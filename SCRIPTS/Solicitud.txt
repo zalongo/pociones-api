@@ -1,0 +1,38 @@
+Prueba desarrollador HeyFoodie
+
+Te acaban de contratar para levantar un servicio API para una tienda de pociones, que lleva actualmente
+la información de envíos a través de una planilla excel.
+Tu misión es pasar esta información a un modelo de datos en MySQL, donde deberás considerar 3
+actores principales: clientes (brujas), ventas y pociones con su receta. Cada poción se descompone en
+ingredientes que también van adjuntos en el excel.
+Que tienes que hacer:
+1. Un modelo de datos en MySQL que permita el almacenamiento de clientes, ventas, pociones y
+sus recetas.
+2. Una API en Laravel (6.x o superior) con 1 CRUD de una de las entidades antes mencionadas
+(clientes, ventas, pociones o recetas)
+Esta API deberá tener un método de autentificación (a tu elección), no te solicitamos la creación
+de usuarios pero si el retorno de un token que autorice el uso de la API al llamar a este método y
+sin el token se deberá retornar un mensaje de acceso denegado como respuesta.
+Ej: llamada en get al método api/loginApi que retorne el token a utilizar para el resto de los
+servicios.
+
+CONSIDERACIONES
+Los ingredientes y su costo se encuentran en Excel adjunto.
+Parte del desafió es procesar la data y traspasarla a un modelo relacional en MySQL
+Todas las respuestas y parámetros de consulta deben manejarse en JSON
+El token debe tener un tiempo de vida de 3 horas.
+
+ENTREGABLES
+Para la entrega, deberás subir a un nuevo repositorio en la rama master el proyecto laravel en blanco
+(levantado previo desarrollo de solución). Luego subir tu solución a la rama Develop y hacer un merge
+a la rama Master (revisare el flujo en git)
+No hay problema en que hagas varios commit y/o merge a master, lo importante es la solución y que
+toda modificación pase por Develop.
+Deberás incluir los DDL de las tablas que usa tu solución, y los INSERT para levantamiento de la data
+en el esquema que diseñaste, TODO esto en una carpeta SCRIPTS dentro del proyecto en el
+repositorio.
+Si tienes alguna duda contactamos por correo, te responderemos a la brevedad (incluido el fin de
+semana)
+Eres libre de usar cualquier proveedor de repositorios (gitlab, github, etc), nosotros usamos Bitbucket.
+Cualquier extra que quieras incluir al proyecto es bienvenido!
+Mucha suerte!!!
