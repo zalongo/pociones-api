@@ -1,8 +1,5 @@
-@authToken = 1|riY09NY5o1IuB7zkqTVDPZc9tndd7dXykmFS9xd9
-
 GET http://127.0.0.1:8000/api/clients
 content-type: application/json
-Authorization: Bearer {{authToken}}
 
 
 ###
@@ -10,7 +7,6 @@ Authorization: Bearer {{authToken}}
 
 POST http://127.0.0.1:8000/api/clients
 content-type: application/json
-Authorization: Bearer {{authToken}}
 
 {
 	"name": "Guacolda",
@@ -23,7 +19,6 @@ Authorization: Bearer {{authToken}}
 
 GET http://127.0.0.1:8000/api/clients/5
 content-type: application/json
-Authorization: Bearer {{authToken}}
 
 
 ###
@@ -31,7 +26,6 @@ Authorization: Bearer {{authToken}}
 
 PUT http://127.0.0.1:8000/api/clients/5
 content-type: application/json
-Authorization: Bearer {{authToken}}
 
 {
 	"name": "Guacolda esposa de Lautaro",
@@ -44,4 +38,3 @@ Authorization: Bearer {{authToken}}
 
 DELETE http://127.0.0.1:8000/api/clients/5
 Content-Type: application/json
-Authorization: Bearer {{authToken}}

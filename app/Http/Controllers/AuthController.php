@@ -6,6 +6,7 @@ use Auth;
 use Illuminate\Http\Request;
 use App\Helpers\ApiResponser;
 use App\Http\Resources\UserResource;
+use Illuminate\Support\Facades\Cookie;
 use Symfony\Component\HttpFoundation\Response;
 
 class AuthController extends Controller
@@ -24,16 +25,19 @@ class AuthController extends Controller
 
         $user = auth()->user();
 
+        $token = $user->createToken('API Token')->plainTextToken;
+
+        $cookie = cookie('jwt', $token, 60 * 24);
+
         return $this->success([
-            'token' => $user->createToken('API Token')->plainTextToken,
             'user'  => UserResource::make($user),
-        ]);
+        ])->withCookie($cookie);
     }
 
-    public function logout()
+    public function logout(Request $request)
     {
-        Auth:: user()->tokens()->delete();
-
+        Auth::user()->tokens()->delete();
+        $cookie = Cookie::forget('jwt');
         return $this->success(null, "Chao Pesca'o");
     }
 }

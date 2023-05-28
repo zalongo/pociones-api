@@ -88,7 +88,7 @@ Cada endpoint acepta y devuelve datos en formato JSON.
 }
 ```
 
-Returns: A token.
+Returns: A user data.
 
 
 ### Logout
@@ -97,12 +97,6 @@ Returns: A token.
 - URI        : /api/auth/logout
 - Descripción: Este endpoint permite a los usuarios cerrar sesión en la aplicación.
 
-```json
-{
-  "Authorization": "Bearer xxxtokenxxx"
-}
-```
-
 Returns: A confirmation message.
 
 ### User
@@ -110,12 +104,6 @@ Returns: A confirmation message.
 - Método HTTP: GET
 - URI        : /api/user
 - Descripción: Este endpoint permite a los usuarios obtener sus datos de usuario autenticados.
-
-```json
-{
-  "Authorization": "Bearer xxxtokenxxx"
-}
-```
 
 Returns: A user data.
 
@@ -126,13 +114,7 @@ Retrieves a list of all clients in the database.
 Endpoint: GET /api/clients
 
 Optional Filters: ?limit=10&page=1
-Params   Example:
 
-```json
-{
-  "Authorization": "Bearer xxxtokenxxx"
-}
-```
 
 Returns: A list of all clients.
 
@@ -142,13 +124,7 @@ Retrieves a specific client's data by providing their ID.
 
 Endpoint: GET /api/clients/{client_id}
 
-Params Example:
 
-```json
-{
- 	"Authorization": "Bearer xxxtokenxxx"
-}
-```
 
 Returns: The client's data.
 
@@ -162,7 +138,6 @@ Params Example:
 
 ```json
 {
-  "Authorization": "Bearer xxxtokenxxx",
 	"body": {
 		"name" : "Guacolda",
 		"email": "guacolda@test.cl"
@@ -182,7 +157,6 @@ Params Example:
 
 ```json
 {
-	"Authorization": "Bearer xxxtokenxxx",
 	"body": {
 		"name" : "Guacolda esposa de Lautaro",
 		"email": "guacolda@test.cl"
@@ -198,13 +172,6 @@ Deletes an existing client from the database by setting their status to inactive
 
        Endpoint: DELETE /api/clients/{client_id}
 
-Params Example:
-
-```json
-{
-  "Authorization": "Bearer xxxtokenxxx"
-}
-```
 
 Returns: A confirmation message.
 
@@ -215,13 +182,6 @@ Retrieves a list of all ingredients in the database.
 Endpoint: GET /api/ingredients
 
 Optional Filters: ?limit=10&page=1
-Params   Example:
-
-```json
-{
-  "Authorization": "Bearer xxxtokenxxx"
-}
-```
 
 Returns: A list of all ingredients.
 
@@ -231,13 +191,6 @@ Retrieves a specific ingredient's data by providing their ID.
 
 Endpoint: GET /api/ingredients/{ingredient_id}
 
-Params Example:
-
-```json
-{
-	"Authorization": "Bearer xxxtokenxxx"
-}
-```
 
 Returns: The client's data.
 
@@ -251,7 +204,6 @@ Params Example:
 
 ```json
 {
-  "Authorization": "Bearer xxxtokenxxx",
   "body": {
     {
 		 "name" : "Limón",
@@ -274,7 +226,6 @@ Params Example:
 
 ```json
 {
-	"Authorization": "Bearer xxxtokenxxx",
 	"body": {
 		"name" : "Limón",
 		"price": 1200,
@@ -291,14 +242,6 @@ Deletes an existing ingredient from the database by setting their status to inac
 
 Endpoint: DELETE /api/ingredients/{ingredient_id}
 
-Params Example:
-
-```json
-{
-  "Authorization": "Bearer xxxtokenxxx"
-}
-```
-
 Returns: A confirmation message.
 
 ### Get Potions
@@ -308,13 +251,6 @@ Retrieves a list of all potions in the database.
 Endpoint: GET /api/potions
 
 Optional Filters: ?limit=10&page=1
-Params   Example:
-
-```json
-{
-	"Authorization": "Bearer xxxtokenxxx"
-}
-```
 
 Returns: A list of all potions.
 
@@ -323,14 +259,6 @@ Returns: A list of all potions.
 Retrieves a specific potion's data by providing their ID.
 
 Endpoint: GET /api/potions/{potion_id}
-
-Params Example:
-
-```json
-{
-  "Authorization": "Bearer xxxtokenxxx"
-}
-```
 
 Returns: The client's data.
 
@@ -344,7 +272,6 @@ Params Example:
 
 ```json
 {
-	"Authorization": "Bearer xxxtokenxxx",
 	"body": {
 		"name": "Agua Para Resfrio",
 		"ingredients": [
@@ -377,7 +304,6 @@ Params Example:
 
 ```json
 {
-	"Authorization": "Bearer xxxtokenxxx",
 	"body": {
 		"name": "Agua Para Resfrio",
 		"ingredients": [
@@ -402,14 +328,6 @@ Deletes an existing potion from the database by setting their status to inactive
 
 Endpoint: DELETE /api/potions/{potion_id}
 
-Params Example:
-
-```json
-{
-  "Authorization": "Bearer xxxtokenxxx"
-}
-```
-
 Returns: A confirmation message.
 
 ### Get Sales
@@ -419,13 +337,6 @@ Retrieves a list of all sales in the database.
 Endpoint: GET /api/sales
 
 Optional Filters: ?limit=10&page=1&client=1
-Params   Example:
-
-```json
-{
-  "Authorization": "Bearer xxxtokenxxx"
-}
-```
 
 Returns: A list of all sales.
 
@@ -434,14 +345,6 @@ Returns: A list of all sales.
 Retrieves a specific sale's data by providing their ID.
 
 Endpoint: GET /api/sales/{sale_id}
-
-Params Example:
-
-```json
-{
-	"Authorization": "Bearer xxxtokenxxx"
-}
-```
 
 Returns: The client's data.
 
@@ -455,7 +358,6 @@ Params Example:
 
 ```json
 {
-	"Authorization": "Bearer xxxtokenxxx",
 	"body": {
 		"client_id": 5,
 		"potions"  : [
@@ -484,7 +386,6 @@ Params Example:
 
 ```json
 {
-	"Authorization": "Bearer xxxtokenxxx",
 	"body": {
 		"client_id": 5,
 		"potions"  : [
@@ -508,14 +409,6 @@ Returns: A confirmation message and the updated sale's data.
 Deletes an existing sale from the database by setting their status to inactive.
 
 Endpoint: DELETE /api/sales/{sale_id}
-
-Params Example:
-
-```json
-{
-	"Authorization": "Bearer xxxtokenxxx"
-}
-```
 
 Returns: A confirmation message.
 

@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
             PotionSeeder::class,
             IngredientSeeder::class,
             IngredientPotionSeeder::class,
-            SaleSeeder::class,
+            // SaleSeeder::class,
             UserSeeder::class
         ]);
     }

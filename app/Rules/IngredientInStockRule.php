@@ -3,7 +3,6 @@
 namespace App\Rules;
 
 use App\Models\Potion;
-use App\Models\Ingredient;
 use App\Http\Resources\SaleResource;
 use Illuminate\Contracts\Validation\Rule;
 
